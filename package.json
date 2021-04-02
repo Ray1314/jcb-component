@@ -156,8 +156,6 @@
   "devDependencies": {
     "antd": "^4.9.2",
     "autoprefixer": "^9.8.6",
-    "axios": "^0.21.0",
-    "postcss": "^7.0.35",
-    "tailwindcss": "^2.0.1-compat"
+    "axios": "^0.21.0"
   }
 }
