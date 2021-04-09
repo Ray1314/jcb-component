@@ -1,7 +1,8 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 import actions from './actions'
 export function* fetchProject(action) {
-    const num = yield call(() => { return action.num })
+    const num = yield call(() => { return new Promise((re,ro) => { setTimeout(() => { re(action.num) }, 3000) })});
+    console.log(num)
     yield put(actions.increase(num))
 }
 
